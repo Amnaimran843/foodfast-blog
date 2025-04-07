@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foodiest</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1556912999-31f5b6f3a9bb') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+    .hero-text {
+      padding-top: 30vh;
+    }
+    .menu-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Foodiest</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero d-flex align-items-center text-center">
+  <div class="container hero-text">
+    <h1 class="display-4 fw-bold">Welcome to Foodiest</h1>
+    <p class="lead">Delicious food delivered fresh to your door</p>
+    <a href="#menu" class="btn btn-warning btn-lg mt-3">View Menu</a>
+  </div>
+</header>
+
+<!-- Menu Section -->
+<section id="menu" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4">Our Popular Dishes</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card menu-card">
+          <img src="https://images.unsplash.com/photo-1600891965050-6e82f6e37f70" class="card-img-top" alt="Burger">
+          <div class="card-body">
+            <h5 class="card-title">Classic Burger</h5>
+            <p class="card-text">Juicy beef patty with fresh lettuce and melted cheese.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card menu-card">
+          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" class="card-img-top" alt="Pasta">
+          <div class="card-body">
+            <h5 class="card-title">Creamy Pasta</h5>
+            <p class="card-text">Rich Alfredo sauce with tender chicken and parmesan.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card menu-card">
+          <img src="https://images.unsplash.com/photo-1576402187879-4e8e17c658f3" class="card-img-top" alt="Pizza">
+          <div class="card-body">
+            <h5 class="card-title">Pepperoni Pizza</h5>
+            <p class="card-text">Wood-fired crust with spicy pepperoni and mozzarella.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>About Foodiest</h2>
+        <p>We’re passionate about food — cooking it, sharing it, and making sure it brings people together. At Foodiest, we use only the freshest ingredients to create meals that warm the soul.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="https://images.unsplash.com/photo-1546069901-eacef0df6022" class="img-fluid rounded" alt="About us">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Get in Touch</h2>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="col-md-6">
+        <input type="email" class="form-control" placeholder="Your Email" required>
+      </div>
+      <div class="col-12">
+        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-primary px-5">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  &copy; 2025 Foodiest. All rights reserved.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
